@@ -12,9 +12,13 @@ function App() {
           alignItems: "center",
         }}
       >
-        <h1>Starter App</h1>
+        <h1>Appointments App</h1>
         <nav>
-          <Link to="/home">Home</Link> - <Link to="/about">About</Link>
+          <Link to="/home">Home</Link> {' - '} 
+          <Link to="/about">About</Link> {' - '} 
+          <Link to='/users'>Users</Link> {' - '} 
+          <Link to='/doctors'>Doctors</Link> {' - '}
+          <Link to='/appointments'>Appointments</Link>
         </nav>
       </nav>
       <div
