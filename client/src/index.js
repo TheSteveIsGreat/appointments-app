@@ -10,6 +10,9 @@ import Home from "./pages/Home";
 import Users from "./pages/Users";
 import Doctors from "./pages/Doctors";
 import Appointments from "./pages/Appointments";
+import UserShow from "./pages/UserShow";
+import DoctorShow from "./pages/DoctorShow";
+import AppointmentShow from "./pages/AppointmentShow";
 
 
 const NotFound = ()=>{
@@ -17,7 +20,6 @@ const NotFound = ()=>{
 }
 
 ReactDOM.render(
-  <DataProvider>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />}>
@@ -26,11 +28,13 @@ ReactDOM.render(
           <Route path="/users" element={<Users />} />
           <Route path="/doctors" element={<Doctors />} />
           <Route path="/appointments" element={<Appointments />} />
+          <Route path="/users/:id" element={<UserShow/>} />
+          <Route path="/doctors/:id" element={<DoctorShow/>} />
+          <Route path="/appointments/:id" element={<AppointmentShow/>} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
-    </BrowserRouter>
-  </DataProvider>,
+    </BrowserRouter>,
   document.getElementById("root")
 );
 
