@@ -8,7 +8,7 @@ const AppointmentShow = (props)=>{
  const [{data, loading, error}] = useAxios(`/api/appointments/${id}`) 
  return (
      <AxiosContainer loading={loading} error={error} >
-        <StringifyJSON json={data} />
+        <StringifyJSON json={data}  />
      </AxiosContainer>
  )
 }

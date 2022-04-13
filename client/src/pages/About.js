@@ -4,16 +4,19 @@ const About = () => {
   return (
     <div>
       <h1>About Page</h1>
-      <p>find me in the pages/About.js</p>
+      <p> A user will have many doctors through appointments. 
+        This app includes advanced relationships in models 
+        using has_many through associations.</p>
 
-      <h1>Features</h1>
+      <h1>Components</h1>
+      <p>Axios Container</p>
+      <p>Card</p>
+      <p>List</p>
+      <p>Stringify JSON</p>
 
-      <Card>
-        <h3>Styled Components</h3>
-        
-      </Card>
+      <h1>Providers</h1>
+      <p>Data Provider</p>
 
-      <h3>Hooks</h3>
     </div>
   );
 };
