@@ -1,6 +1,6 @@
 # Starter project (Created spr 22)
 
-This project is meant to be a starting for homework/projects.
+This project is meant to be a starting for projects.
 It is Rails 7 API app with React frontend.
 
 ### Setup instructions
